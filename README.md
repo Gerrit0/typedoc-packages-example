@@ -3,6 +3,8 @@
 This monorepo provides an example of how TypeDoc's packages mode can be used to generate documentation
 for multiple projects and combine it into a single site which contains all documented projects.
 
+You can see the result of building this at <https://gerritbirkeland.com/typedoc-packages-example/index.html>
+
 ## Building
 
 ```bash

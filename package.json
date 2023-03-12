@@ -17,6 +17,7 @@
     "entryPoints": [
       "."
     ],
+    "name": "Packages Example",
     "entryPointStrategy": "packages",
     "includeVersion": true
   }
