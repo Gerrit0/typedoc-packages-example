@@ -1,0 +1,13 @@
+{
+  "name": "@typedoc/foo",
+  "version": "0.0.2",
+  "exports": "./dist/index.js",
+  "dependencies": {
+    "@typedoc/bar": "0.0.1"
+  },
+  "typedocOptions": {
+    "entryPoints": [
+      "src/index.ts"
+    ]
+  }
+}

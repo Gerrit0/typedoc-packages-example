@@ -1,0 +1,23 @@
+{
+  "name": "typedoc-packages-example",
+  "private": true,
+  "workspaces": [
+    "packages/foo",
+    "packages/bar"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc"
+  },
+  "dependencies": {
+    "typedoc": "beta",
+    "typescript": "^4.9.5"
+  },
+  "typedocOptions": {
+    "entryPoints": [
+      "."
+    ],
+    "entryPointStrategy": "packages",
+    "includeVersion": true
+  }
+}
