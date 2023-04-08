@@ -19,6 +19,14 @@
     ],
     "name": "Packages Example",
     "entryPointStrategy": "packages",
+    "exclude": [
+      "**/node_modules/**",
+      "**/packages/**/node_modules/**"
+    ],
+    "externalPattern": [
+      "**/node_modules/**"
+    ],
+    "excludeExternals": true,
     "includeVersion": true
   }
 }

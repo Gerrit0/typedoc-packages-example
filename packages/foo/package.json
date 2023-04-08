@@ -3,8 +3,11 @@
   "version": "0.0.2",
   "exports": "./dist/index.js",
   "dependencies": {
-    "@typedoc/bar": "0.0.1"
+    "@types/lodash-es": "4.17.7",
+    "@typedoc/bar": "0.0.1",
+    "lodash-es": "4.17.21"
   },
+  "type": "module",
   "typedocOptions": {
     "entryPoints": [
       "src/index.ts"
