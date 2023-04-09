@@ -10,15 +10,7 @@
     "docs": "typedoc"
   },
   "dependencies": {
-    "typedoc": "beta",
+    "typedoc": "^0.24.0",
     "typescript": "^4.9.5"
-  },
-  "typedocOptions": {
-    "entryPoints": [
-      "."
-    ],
-    "name": "Packages Example",
-    "entryPointStrategy": "packages",
-    "includeVersion": true
   }
 }

@@ -1,10 +1,5 @@
 {
   "name": "@typedoc/bar",
   "version": "0.0.1",
-  "exports": "./dist/index.js",
-  "typedocOptions": {
-    "entryPoints": [
-      "src/index.ts"
-    ]
-  }
+  "exports": "./dist/index.js"
 }
