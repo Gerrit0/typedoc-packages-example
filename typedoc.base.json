@@ -1,4 +1,25 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "includeVersion": true
+  "includeVersion": true,
+  "intentionallyNotExported": [],
+  "validation": {
+    "notExported": false,
+    "invalidLink": true,
+    "notDocumented": false
+  },
+  "visibilityFilters": {
+    "protected": false,
+    "private": false,
+    "inherited": true,
+    "external": false,
+    "@internal": false
+  },
+  "externalPattern": [
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/node_modules/**"
+  ],
+  "excludeExternals": true,
+  "excludeInternal": true,
+  "excludeNotDocumented": true
 }

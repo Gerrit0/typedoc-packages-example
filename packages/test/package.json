@@ -1,0 +1,9 @@
+{
+  "name": "test",
+  "sideEffects": false,
+  "type": "module",
+  "dependencies": {
+    "mobx": "6.9.0",
+    "serializr": "3.0.2"
+  }
+}
