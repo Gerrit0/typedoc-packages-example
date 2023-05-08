@@ -10,7 +10,7 @@
     "docs": "typedoc"
   },
   "dependencies": {
-    "typedoc": "^0.24.0",
-    "typescript": "^4.9.5"
+    "typedoc": "^0.24.7",
+    "typescript": "^5.0.4"
   }
 }
