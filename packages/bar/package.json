@@ -1,5 +1,8 @@
 {
   "name": "@typedoc/bar",
   "version": "0.0.1",
-  "exports": "./dist/index.js"
+  "exports": "./dist/index.js",
+  "scripts": {
+    "docs": "typedoc"
+  }
 }

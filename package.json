@@ -2,12 +2,12 @@
   "name": "typedoc-packages-example",
   "private": true,
   "workspaces": [
-    "packages/foo",
-    "packages/bar"
+    "packages/*"
   ],
   "scripts": {
     "build": "tsc --build",
-    "docs": "typedoc"
+    "docs": "typedoc",
+    "docs-all": "npm run docs --workspaces --if-present"
   },
   "dependencies": {
     "typedoc": "^0.24.7",

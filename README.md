@@ -10,9 +10,16 @@ You can see the result of building this at <https://gerritbirkeland.com/typedoc-
 ```bash
 git clone git@github.com:Gerrit0/typedoc-packages-example.git
 npm install
+
 # We need to build before building the docs so that `foo` can reference types from `bar`
 # TypeDoc can't use TypeScript's build mode to do this for us because build mode may skip
 # a project that needs documenting, or include packages that shouldn't be included in the docs
 npm run build
+
+# Now, we can run TypeDoc with packages mode to generate a single docs folder
 npm run docs
+
+# Or use npm workspaces to run TypeDoc individually in each package that defines
+# a docs script, to generate a docs folder in each package
+npm run docs-all
 ```
