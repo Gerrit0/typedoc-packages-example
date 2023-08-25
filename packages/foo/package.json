@@ -6,6 +6,6 @@
     "@typedoc/bar": "0.0.1"
   },
   "scripts": {
-    "docs": "typedoc"
+    "docs": "typedoc --out docs"
   }
 }

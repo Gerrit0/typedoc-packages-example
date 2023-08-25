@@ -22,4 +22,13 @@ npm run docs
 # Or use npm workspaces to run TypeDoc individually in each package that defines
 # a docs script, to generate a docs folder in each package
 npm run docs-all
+
+# Or for more control over when each package is built, we can manually build each
+# package and save the output of --json
+# Cross-package links will be invalid here, they will be validated when merging
+npx typedoc --json docs-json/bar.json --options packages/bar/typedoc.json --validation.invalidLink false
+npx typedoc --json docs-json/baz.json --options packages/baz/typedoc.json --validation.invalidLink false
+npx typedoc --json docs-json/foo.json --options packages/foo/typedoc.json --validation.invalidLink false
+# Merge previously generated documentation together into a site
+npx typedoc --entryPointStrategy merge "docs-json/*.json"
 ```
