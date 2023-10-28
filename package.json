@@ -1,5 +1,6 @@
 {
   "name": "typedoc-packages-example",
+  "version": "1.0.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -10,7 +11,7 @@
     "docs-all": "npm run docs --workspaces --if-present"
   },
   "dependencies": {
-    "typedoc": "^0.24.7",
+    "typedoc": "^0.25.2",
     "typescript": "^5.0.4"
   }
 }
