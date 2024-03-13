@@ -11,7 +11,7 @@
     "docs-all": "npm run docs --workspaces --if-present"
   },
   "dependencies": {
-    "typedoc": "^0.25.2",
-    "typescript": "^5.0.4"
+    "typedoc": "^0.25.12",
+    "typescript": "^5.4.2"
   }
 }
