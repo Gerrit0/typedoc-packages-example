@@ -2,5 +2,10 @@
     "extends": ["../../typedoc.base.json"],
     "entryPoints": ["src/index.ts"],
     "excludeExternals": true,
-    "externalPattern": ["**/packages/lib/**"]
+    "externalPattern": [
+        "**/node_modules/**",
+        // Both of these seem to work.
+        // "**/packages/!(wrapping-lib)/**",
+        "!**/packages/wrapping-lib/**"
+    ]
 }
