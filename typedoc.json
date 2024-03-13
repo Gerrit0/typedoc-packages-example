@@ -1,9 +1,10 @@
 {
-  "entryPoints": ["packages/*"],
-  "name": "Packages Example",
-  "entryPointStrategy": "packages",
-  "includeVersion": false
+    "entryPoints": ["packages/*"],
+    "name": "Packages Example",
+    "entryPointStrategy": "packages",
+    "plugin": ["typedoc-plugin-missing-exports"],
+    "includeVersion": false
 
-  // Potentially useful for debugging
-  // "logLevel": "Verbose"
+    // Potentially useful for debugging
+    // "logLevel": "Verbose"
 }

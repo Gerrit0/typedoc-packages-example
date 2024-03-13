@@ -3,11 +3,15 @@
  * @packageDocumentation
  */
 
-import { libFunc } from "@typedoc/lib";
+import { LibInt, libFunc } from "@typedoc/lib";
+
+interface WrappingLibInt {
+    libInt: LibInt;
+}
 
 /**
  * Docs for `wrappingLibFunc` function, which returns a {@link @typedoc/lib!LibInt}
  */
-export function wrappingLibFunc() {
-    return libFunc();
+export function wrappingLibFunc(): WrappingLibInt {
+    return { libInt: libFunc() };
 }
