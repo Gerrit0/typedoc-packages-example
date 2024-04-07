@@ -25,10 +25,10 @@ npm run docs-all
 
 # Or for more control over when each package is built, we can manually build each
 # package and save the output of --json
-# Cross-package links will be invalid here, they will be validated when merging
-npx typedoc --json docs-json/bar.json --options packages/bar/typedoc.json --validation.invalidLink false
-npx typedoc --json docs-json/baz.json --options packages/baz/typedoc.json --validation.invalidLink false
-npx typedoc --json docs-json/foo.json --options packages/foo/typedoc.json --validation.invalidLink false
+# Cross-package links will be invalid during initial conversion, they will be validated when merging
+for package in packages/*; do
+    npx typedoc --json docs-json/$(basename $package).json --options $package/typedoc.json --validation.invalidLink false
+done
 # Merge previously generated documentation together into a site
 npx typedoc --entryPointStrategy merge "docs-json/*.json"
 ```

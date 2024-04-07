@@ -1,27 +1,28 @@
 name: Publish
 on:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
 jobs:
-  build-docs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-      - name: Install
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Build docs
-        run: npm run docs
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          branch: gh-pages
-          folder: docs
+    build-docs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Set up Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "16"
+            - name: Install
+              run: npm ci
+            - name: Build
+              run: npm run build
+            - name: Build docs
+              run: npm run docs
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@v4.4.1
+              with:
+                  branch: gh-pages
+                  folder: docs
+                  single-commit: true
