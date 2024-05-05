@@ -1,5 +1,5 @@
 {
-  "extends": ["../../typedoc.base.json"],
-  // If not set, will result in a warning being printed since it's likely a misconfiguration
-  "entryPoints": []
+    "extends": ["../../typedoc.base.jsonc"],
+    // If not set, will result in a warning being printed since it's likely a misconfiguration
+    "entryPoints": []
 }

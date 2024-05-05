@@ -18,17 +18,19 @@ npm run build
 
 # Now, we can run TypeDoc with packages mode to generate a single docs folder
 npm run docs
+```
 
-# Or use npm workspaces to run TypeDoc individually in each package that defines
-# a docs script, to generate a docs folder in each package
-npm run docs-all
+## Building - Advanced
 
-# Or for more control over when each package is built, we can manually build each
-# package and save the output of --json
+If your build system requires running with multiple versions of TypeDoc, you can instead manually
+generate JSON files for each package, and then run TypeDoc on the generated JSON files.
+
+```bash
 # Cross-package links will be invalid during initial conversion, they will be validated when merging
 for package in packages/*; do
     npx typedoc --json docs-json/$(basename $package).json --options $package/typedoc.json --validation.invalidLink false
 done
+
 # Merge previously generated documentation together into a site
 npx typedoc --entryPointStrategy merge "docs-json/*.json"
 ```
