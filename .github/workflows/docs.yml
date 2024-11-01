@@ -9,11 +9,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Set up Node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: "16"
+                  node-version: "20"
             - name: Install
               run: npm ci
             - name: Build
@@ -21,7 +21,7 @@ jobs:
             - name: Build docs
               run: npm run docs
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4.4.1
+              uses: JamesIves/github-pages-deploy-action@v4.6.8
               with:
                   branch: gh-pages
                   folder: docs
