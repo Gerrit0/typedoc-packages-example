@@ -1,4 +1,6 @@
 {
     "extends": ["../../typedoc.base.jsonc"],
-    "entryPoints": ["src/index.ts"]
+    "entryPoints": ["src/index.ts"],
+    "readme": "none", // Disable readme on main page to instead add it as a document
+    "projectDocuments": ["README.md"]
 }
