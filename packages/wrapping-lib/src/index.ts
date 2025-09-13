@@ -1,5 +1,5 @@
 /**
- * Docs for `foo` module
+ * Docs for `foo` module links to [lib package with directory](../../lib)
  * @packageDocumentation
  */
 
